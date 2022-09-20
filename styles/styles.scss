@@ -26,10 +26,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
-  max-width: 920px;
-  height: 80%;
-  max-height: 540px;
+  width: min(80%, 2000px);
+  height: min(80%, 1200px);
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -136,7 +134,7 @@ body {
   background-color: $light-blue;
 
   &__title {
-    color: $white;
+    margin-bottom: 24px;
   }
 }
 

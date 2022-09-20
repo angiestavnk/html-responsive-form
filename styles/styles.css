@@ -16,10 +16,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 80%;
-  max-width: 920px;
-  height: 80%;
-  max-height: 540px;
+  width: min(80%, 2000px);
+  height: min(80%, 1200px);
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -114,7 +112,7 @@ body {
   background-color: #006DB2;
 }
 .signup__title {
-  color: #fff;
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 768px) {
